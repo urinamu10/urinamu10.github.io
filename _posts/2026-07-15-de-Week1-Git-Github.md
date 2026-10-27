@@ -1,5 +1,5 @@
 ---
-title: "[DE-Week Day1] Data Engineering이란?"
+title: "Data Engineering이란?"
 description: DE 기초
 date: 2026-10-27 23:00:00 +0900
 categories: [Daily Blog]
