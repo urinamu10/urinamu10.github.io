@@ -1,13 +1,16 @@
 ---
-title: "2026-10-29"
-description: Data Engineering이란?
-date: 2026-10-27 23:00:00 +0900
-categories: [Daily Blog]
-tags: [Git, Github]
+title: "[DE-Week 1-1] - Git과 GitHub SQL 재복습"
+description: 핵심적인 프로젝트 관리를 위한 git과 github 그리고 SQLD 시험준비 1장
+date: 2026-10-30 21:00:00 +0900
+categories: [Data Engineering, TIL]
+tags: [Git, Github, SQL]
 toc: true
 comments: true
-mermaid: true
+#mermaid: true   # 다이어그램(mermaid)을 쓸 때만 맨 앞 # 을 지우세요
 ---
+
+<!-- 파일명: _posts/2026-10-31-de-week3-1-주제-영문.md  (날짜-영문소문자-하이픈) -->
+<!-- 목차는 Chirpy가 오른쪽에 자동으로 만듭니다. 본문에 '목차'를 직접 쓰지 마세요. -->
 
 ### ① 오늘의 목표
 
@@ -66,3 +69,5 @@ mermaid: true
 ---
 
 → JOIN 시각화 실습 후 문제 10개 재풀이
+
+---

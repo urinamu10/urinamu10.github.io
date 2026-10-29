@@ -1,9 +1,9 @@
 ---
-title: "[DE-Week 3-1] 이번 주 주제"
+title: "[DE-Week 1-1] - 이번 주 주제"
 description: 홈 목록에 보일 한 줄 요약. 60~80자 안팎, 목차나 제목 반복 금지
-date: 2026-10-31 10:00:00 +0900
-categories: [Data Engineering]
-tags: [docker, linux]
+date: 2026-10-31 21:00:00 +0900
+categories: [Data Engineering, TIL, Docs]
+tags: [docker, Python]
 toc: true
 comments: true
 #mermaid: true   # 다이어그램(mermaid)을 쓸 때만 맨 앞 # 을 지우세요
