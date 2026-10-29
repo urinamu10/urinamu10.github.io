@@ -1,13 +1,16 @@
 ---
-title: "[DE-Week Day 1] 제목을 여기에"
-description: 홈 목록에 보일 한 줄 요약 (60~80자)
-date: 날짜 시간 +0900
-categories: [Data Engineering, docker]
-tags: [' ']
+title: "[DE-Week 3-1] 이번 주 주제"
+description: 홈 목록에 보일 한 줄 요약. 60~80자 안팎, 목차나 제목 반복 금지
+date: 2026-10-31 10:00:00 +0900
+categories: [Data Engineering]
+tags: [docker, linux]
 toc: true
 comments: true
-mermaid: true
+#mermaid: true   # 다이어그램(mermaid)을 쓸 때만 맨 앞 # 을 지우세요
 ---
+
+<!-- 파일명: _posts/2026-10-31-de-week3-1-주제-영문.md  (날짜-영문소문자-하이픈) -->
+<!-- 목차는 Chirpy가 오른쪽에 자동으로 만듭니다. 본문에 '목차'를 직접 쓰지 마세요. -->
 
 ### ① 오늘의 목표
 
@@ -66,3 +69,5 @@ mermaid: true
 ---
 
 → JOIN 시각화 실습 후 문제 10개 재풀이
+
+---

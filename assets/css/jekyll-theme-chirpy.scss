@@ -1,0 +1,270 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}',
+  $font-family-base: ('Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Segoe UI', sans-serif),
+  $font-family-heading: ('Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Segoe UI', sans-serif)
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ==========================================================
+   Design tokens  (GitHub 스타일의 차분한 톤 + 블루 포인트)
+   색을 바꾸고 싶으면 이 두 mixin 안의 값만 고치면 됩니다.
+   ========================================================== */
+
+@mixin dark-tokens {
+  --accent-ring: rgb(88 166 255 / 55%);
+  --inline-code-text: #79c0ff;
+
+  --main-bg: #0d1117;
+  --main-border-color: #21262d;
+  --text-color: #c9d1d9;
+  --text-muted-color: #8b949e;
+  --text-muted-highlight-color: #b1bac4;
+  --heading-color: #e6edf3;
+  --label-color: #8b949e;
+  --blockquote-border-color: #388bfd;
+  --blockquote-text-color: #8b949e;
+  --link-color: #58a6ff;
+  --link-underline-color: rgb(56 139 253 / 45%);
+  --button-bg: #161b22;
+  --btn-border-color: #30363d;
+  --card-header-bg: #161b22;
+
+  --site-title-color: #e6edf3;
+  --site-subtitle-color: #8b949e;
+  --sidebar-bg: #010409;
+  --sidebar-border-color: #21262d;
+  --sidebar-muted-color: #8b949e;
+  --sidebar-active-color: #e6edf3;
+  --sidebar-hover-bg: #161b22;
+  --sidebar-btn-bg: #161b22;
+  --sidebar-btn-color: #8b949e;
+  --avatar-border-color: #30363d;
+
+  --topbar-bg: rgb(13 17 23 / 72%);
+  --search-border-color: #30363d;
+
+  --post-list-text-color: #9198a1;
+  --toc-highlight: #58a6ff;
+  --tag-hover: rgb(56 139 253 / 15%);
+  --tag-border: #30363d;
+  --search-tag-bg: #161b22;
+  --dash-color: #30363d;
+  --tb-odd-bg: #161b22;
+  --tb-even-bg: #0d1117;
+  --tb-border-color: #21262d;
+  --card-bg: #161b22;
+  --card-hover-bg: #1a212b;
+  --card-shadow: 0 0 0 1px #30363d;
+
+  --categories-border: rgb(48 54 61 / 60%);
+  --categories-hover-bg: #1c2230;
+
+  --highlight-bg-color: #161b22;
+  --language-border-color: #30363d;
+  --highlighter-rouge-color: #c9d1d9;
+  --inline-code-bg: rgb(110 118 129 / 22%);
+}
+
+@mixin light-tokens {
+  --accent-ring: rgb(9 105 218 / 45%);
+  --inline-code-text: #0550ae;
+
+  --main-bg: #ffffff;
+  --main-border-color: #eaeef2;
+  --text-color: #24292f;
+  --text-muted-color: #57606a;
+  --heading-color: #1f2328;
+  --label-color: #57606a;
+  --blockquote-border-color: #0969da;
+  --blockquote-text-color: #57606a;
+  --link-color: #0969da;
+  --link-underline-color: rgb(9 105 218 / 35%);
+  --button-bg: #ffffff;
+  --btn-border-color: #d0d7de;
+  --card-header-bg: #f6f8fa;
+
+  --site-title-color: #1f2328;
+  --site-subtitle-color: #57606a;
+  --sidebar-bg: #f6f8fa;
+  --sidebar-border-color: #d8dee4;
+  --sidebar-muted-color: #57606a;
+  --sidebar-active-color: #1f2328;
+  --sidebar-hover-bg: #eaeef2;
+  --sidebar-btn-bg: #ffffff;
+  --sidebar-btn-color: #57606a;
+  --avatar-border-color: #d0d7de;
+
+  --topbar-bg: rgb(255 255 255 / 72%);
+  --search-border-color: #d0d7de;
+
+  --post-list-text-color: #57606a;
+  --toc-highlight: #0969da;
+  --tag-hover: rgb(9 105 218 / 10%);
+  --tag-border: #d0d7de;
+  --search-tag-bg: #f6f8fa;
+  --dash-color: #d0d7de;
+  --tb-odd-bg: #f6f8fa;
+  --tb-even-bg: #ffffff;
+  --tb-border-color: #d8dee4;
+  --card-bg: #ffffff;
+  --card-hover-bg: #f6f8fa;
+  --card-shadow: 0 0 0 1px #d8dee4;
+
+  --categories-border: #d8dee4;
+  --categories-hover-bg: #eaeef2;
+
+  --highlight-bg-color: #f6f8fa;
+  --language-border-color: #d8dee4;
+  --highlighter-rouge-color: #24292f;
+  --inline-code-bg: rgb(175 184 193 / 20%);
+}
+
+:root[data-bs-theme='dark'] {
+  @include dark-tokens;
+}
+
+:root[data-bs-theme='light'] {
+  @include light-tokens;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme]) {
+    @include dark-tokens;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-bs-theme]) {
+    @include light-tokens;
+  }
+}
+
+/* ==========================================================
+   Typography
+   ========================================================== */
+
+::selection {
+  background: rgb(88 166 255 / 30%);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+/* 포스트 본문: 한글 어절 단위 줄바꿈 + 넉넉한 행간 */
+article[data-toc] .content {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+article[data-toc] .content h2 {
+  margin-top: 2.6rem;
+  padding-bottom: 0.4rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+article[data-toc] .content h3 {
+  margin-top: 2rem;
+  font-weight: 650;
+}
+
+blockquote {
+  border-left-width: 4px;
+}
+
+/* ==========================================================
+   Code
+   ========================================================== */
+
+code,
+kbd,
+samp,
+pre,
+.highlight pre,
+.highlight code {
+  font-family: 'JetBrains Mono', 'D2Coding', ui-monospace, SFMono-Regular, Menlo,
+    Consolas, monospace;
+  letter-spacing: 0;
+}
+
+/* 코드 블록: 얇은 테두리 + 둥근 모서리 */
+div.highlighter-rouge,
+figure.highlight {
+  border: 1px solid var(--language-border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+/* 인라인 코드: 알약 모양 + 포인트 컬러 */
+:not(pre) > code {
+  color: var(--inline-code-text);
+  border-radius: 6px;
+  padding: 0.15em 0.4em;
+}
+
+/* ==========================================================
+   Home / cards
+   ========================================================== */
+
+#post-list .card-wrapper {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+#post-list .card-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px var(--accent-ring),
+    0 8px 24px rgb(1 4 9 / 25%);
+}
+
+#post-list .card-title {
+  font-weight: 700;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+#post-list .card-text {
+  color: var(--post-list-text-color);
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+/* ==========================================================
+   Sidebar / topbar / tags
+   ========================================================== */
+
+#sidebar .site-title a {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+#topbar-wrapper {
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+
+.post-tag {
+  border-radius: 999px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
