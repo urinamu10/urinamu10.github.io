@@ -1,5 +1,5 @@
 ---
-title: "Docker와 컨테이너"
+title: "[Docs] Docker와 컨테이너"
 description: 기초적인 Docker의 원리 학습
 date: 2026-03-17 22:00:00 +0900
 categories: [Docs, Data Engineering]
