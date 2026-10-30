@@ -219,6 +219,15 @@ figure.highlight {
   padding: 0.15em 0.4em;
 }
 
+/* 코드 블록 헤더의 점 3개: macOS 창 버튼 색 (빨강 / 노랑 / 초록)
+   간격 1.25rem = 점 크기 0.75rem + 간격 0.5rem (테마 기본값과 동일) */
+div[class^='language-'] .code-header::before {
+  background-color: #ff5f57;
+  box-shadow:
+    1.25rem 0 0 #febc2e,
+    2.5rem 0 0 #28c840;
+}
+
 /* ==========================================================
    Home / cards
    ========================================================== */
