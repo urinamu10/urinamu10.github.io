@@ -2,11 +2,11 @@
 title: "Docker와 컨테이너"
 description: 기초적인 Docker의 원리 학습
 date: 2026-03-17 22:00:00 +0900
-categories: [Data Engineering, Docker]
-tags: [PostgreSQL, Linux, ShellScript]
+categories: [Docs, Data Engineering]
+tags: [PostgreSQL, Linux, Docker, ShellScript]
 ---
 
-### 1. Docker는 뭘까?
+## 1. Docker는 뭘까?
 
 ![alt text](/assets/img/imagedocker1.png)
 
@@ -22,14 +22,14 @@ tags: [PostgreSQL, Linux, ShellScript]
 
 서로다른 환경에서 다른 버전으로 충돌할 일도 없어지고 
 심지어는 아예 특정 프로그램을 다운받지 않아도 터미널상에서 docker를 통해 빠르게 띄울 수 가 있죠.
-#### 1-1 docker 다운로드 확인(없음)
+### 1-1 docker 다운로드 확인(없음)
 
 먼저 현재 대여중인 레노버 노트북에 docker가 설치되어있는지 확인해보았으나
 설치가 되지 않은상태라고 나옵니다.
 
 ![alt text](/assets/img/imagedocker.png)
 
-#### 1-2 dokcer 다운로드 확인완료
+### 1-2 dokcer 다운로드 확인완료
 
 제가 5일후에 MAC pro를 사기전까진 레노버에서 docker를 연습해보는게 목적이기 때문에 windows용 docker desktop을 다운로드 받았습니다.
 
@@ -37,7 +37,7 @@ tags: [PostgreSQL, Linux, ShellScript]
 
 설치 후 다시확인해보니 docker가 정상적으로 설치된 모습을 알 수 있었습니다.
 
-#### 1-3 docker에 접속
+### 1-3 docker에 접속
 
 ```terminal
 docker run --name 서버이름-db -e POSTGRES_PASSWORD=비밀번호 -p 5432:5432 -d postgres:16
@@ -60,9 +60,10 @@ DB 접속 PASSWORD를 설정하는 곳으로 비밀번호에 설정하고싶은 
 > `-d postgres:16`
 
 postgres 16버전 이미지를 가져와서 백그라운드(-d)에서 실행합니다.
+
 ---
 
-### 2. docker에서 postgreSQL 접속하기
+## 2. docker에서 postgreSQL 접속하기
 
 ```terminal 
 docker exec -it 이름-db psql -U postgres
@@ -75,7 +76,7 @@ docker exec -it 이름-db psql -U postgres
 
 위 이미지처럼 좌측에 `plostgres=#`이 나온다면 터미널과 **docker**만으로 **postgreSQL**에 접속을 성공한 것입니다.
 
-#### 2-1 첫 테이블 만들어보기
+### 2-1 첫 테이블 만들어보기
 
 이제 `POSTGRESQL`에서 역사적인 첫번째 테이블을 생성해보겠습니다.
 
@@ -87,13 +88,13 @@ CREATE TABLE hello_de (
 );
 ```
 
-#### 2-2 테이블 안에 한줄 넣어보기
+### 2-2 테이블 안에 한줄 넣어보기
 
 ```sql
 INSERT INTO hello_de (task, status) VALUES ('Docker Start', 'Success');
 ```
 
-##### 확인하기
+#### 확인하기
 
 ```sql
 SELECT * FROM hello_de;

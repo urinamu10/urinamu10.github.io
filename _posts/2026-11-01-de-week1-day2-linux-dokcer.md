@@ -1,8 +1,8 @@
 ---
-title: "Linux, Scripting, Docker 기초"
+title: "[DE-Week 1-2] Linux, Scripting, Docker 기초"
 description: 기초적인 터미널 사용법과 docker 원리 학습
 date: 2026-03-18 22:00:00 +0900
-categories: [TIL]
+categories: [TIL, Data Engineering]
 tags: [PostgreSQL, Docker, Linux, ShellScript]
 math: true
 mermaid: true
@@ -32,7 +32,7 @@ PS C:\Users\ wsl
 
 또한 `LS`를 쳐보면 제 Windows에 설치되어있는 많은 파일,폴더들을 쭉 나열 시켜줍니다.
 
----
+
 ## 2. Linux에서 쉘 스크립트 작성하기
 
 이제 리눅스에 진입을 했으니 본격적으로 간단한 스크립트를 하나 작성해보겠습니다.
@@ -112,7 +112,7 @@ jsjs@JSJS:/mnt/c/Users/urina$
 
 **여기가 바로 `./check_db.sh` 쉘 스크립트를 자동화하는 구간입니다.**
 
----
+
 ## 오늘 배운 부분들
 
 오늘은 이렇게 Linux 환경을 설정하고, 자동화시키는 쉘 스크립트까지 배워보게되었습니다.

@@ -2,8 +2,8 @@
 title: "SQL 코드카타"
 description: SQL 코드카타 5문제 풀이
 date: 2026-03-21 00:00:00 +0900
-categories: [Code Kata]
-tags: [SQL]
+categories: [Code Kata, SQL]
+tags: [hackerrank]
 math: true
 mermaid: true
 ---
