@@ -1,9 +1,9 @@
 ---
-title: "[DE-Week 1-1] - Docker와 컨테이너"
+title: "Docker와 컨테이너"
 description: 기초적인 Docker의 원리 학습
 date: 2026-03-17 22:00:00 +0900
-categories: [TIL, Data Engineering]
-tags: [PostgreSQL, Docker, Linux, ShellScript]
+categories: [Data Engineering, Docker]
+tags: [PostgreSQL, Linux, ShellScript]
 ---
 
 ### 1. Docker는 뭘까?
