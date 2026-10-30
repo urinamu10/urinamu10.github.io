@@ -2,7 +2,7 @@
 title: "[DE-Week 1-1] - Git과 GitHub SQL 재복습"
 description: 핵심적인 프로젝트 관리를 위한 git과 github 그리고 SQLD 시험준비 1장
 date: 2026-10-30 21:00:00 +0900
-categories: [Data Engineering, TIL]
+categories: [TIL, Data Engineering]
 tags: [Git, Github, SQL]
 toc: true
 comments: true
@@ -14,8 +14,8 @@ comments: true
 
 ### ① 오늘의 목표
 
-> *오늘 반드시 만들어야 했던 결과는 무엇인가요?*
-> 
+> *오늘 반드시 학습하거나 만들어야하는 주제는 뭔가요?*
+
 
 ---
 
@@ -26,7 +26,6 @@ comments: true
 ### ② 실제 결과
 
 > 오늘 실제로 무엇을 했나요?
-> 
 
 ---
 
@@ -44,8 +43,7 @@ comments: true
 
 ### ⑤ 해결방법
 
-> *어떻게 해결해야 할까요?*
-> 
+> *어떻게 해결해야 할까요?* 
 
 ---
 
@@ -53,8 +51,7 @@ comments: true
 
 ### ⑥ 어제의 나보다 나아진부분
 
-> 어제의 나보다 발전한 부분이 있나요?
-> 
+> 어제의 나보다 발전한 부분이 있나요? 
 
 ---
 
@@ -64,7 +61,6 @@ comments: true
 ### ⑥내일의 계획
 
 > *내일은 어떤 계획을 준비하고 있나요?*
-> 
 
 ---
 
