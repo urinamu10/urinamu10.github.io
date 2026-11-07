@@ -1,9 +1,9 @@
 ---
-title: "[DE-Week 1-2] Linux, Scripting, Docker 기초"
+title: "[DE-Week 1-1] Linux, Scripting, Docker 기초"
 description: 기초적인 터미널 사용법과 docker 원리 학습
-date: 2026-03-18 22:00:00 +0900
-categories: [TIL, Data Engineering]
-tags: [PostgreSQL, Docker, Linux, ShellScript]
+date: 2026-10-31 22:00:00 +0900
+categories: [TIL, Docker]
+tags: [postgreSQL, linux, shellscript]
 math: true
 mermaid: true
 ---

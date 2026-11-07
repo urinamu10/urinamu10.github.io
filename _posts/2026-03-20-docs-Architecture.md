@@ -1,9 +1,9 @@
 ---
-title: "[Docs] 데이터 아키텍쳐"
+title: "데이터 아키텍쳐"
 description: 데이터 엔지니어링 전체 라이프 사이클과 아키텍쳐 
 date: 2026-03-20 00:00:00 +0900
-categories: [Docs, Data Engineering]
-tags: [Architecture]
+categories: [Data Engineering, Archiecture]
+tags: []
 math: true
 mermaid: true
 ---

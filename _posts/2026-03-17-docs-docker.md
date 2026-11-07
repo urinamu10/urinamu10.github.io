@@ -1,9 +1,9 @@
 ---
-title: "[Docs] Docker와 컨테이너"
+title: "Docker와 컨테이너"
 description: 기초적인 Docker의 원리 학습
 date: 2026-03-17 22:00:00 +0900
-categories: [Docs, Data Engineering]
-tags: [PostgreSQL, Linux, Docker, ShellScript]
+categories: [Data Engineering, Docker]
+tags: [postgreSQL, linux, shellscript]
 ---
 
 ## 1. Docker는 뭘까?
@@ -24,7 +24,7 @@ tags: [PostgreSQL, Linux, Docker, ShellScript]
 심지어는 아예 특정 프로그램을 다운받지 않아도 터미널상에서 docker를 통해 빠르게 띄울 수 가 있죠.
 ### 1-1 docker 다운로드 확인(없음)
 
-먼저 현재 대여중인 레노버 노트북에 docker가 설치되어있는지 확인해보았으나
+먼저 현재 대여중인 레노버 노트북에 docker가 설치되어있는지 확인해보았으나4
 설치가 되지 않은상태라고 나옵니다.
 
 ![alt text](/assets/img/imagedocker.png)
