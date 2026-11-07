@@ -81,6 +81,7 @@ docker exec -it 이름-db psql -U postgres
 위 이미지처럼 좌측에 `plostgres=#`이 나온다면 터미널과 **docker**만으로 **postgreSQL**에 접속을 성공한 것입니다.
 
 ### 2-1 첫 테이블 만들어보기
+---
 
 이제 `POSTGRESQL`에서 역사적인 첫번째 테이블을 생성해보겠습니다.
 
@@ -93,6 +94,7 @@ CREATE TABLE hello_de (
 ```
 
 ### 2-2 테이블 안에 한줄 넣어보기
+---
 
 ```sql
 INSERT INTO hello_de (task, status) VALUES ('Docker Start', 'Success');

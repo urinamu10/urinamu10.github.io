@@ -49,6 +49,8 @@ nano my_first_script.sh
 
 
 ### 2-1 Linux 환경에 진입
+---
+
 ```bash
 #!/bin/bash
 DB_NAME="jongsun-db"
@@ -73,6 +75,7 @@ echo "--------------------------------------"
 
 
 ### 2-2 NaNo 편집기에서 빠져나오는 단축키
+---
 
 nano 편집기에서 빠져나오는 단축키를 순서대로 누르세요.
 
@@ -84,6 +87,7 @@ nano 편집기에서 빠져나오는 단축키를 순서대로 누르세요.
 그 다음 Y를 누르고 엔터를 한번더 눌러주면 저장 + 나오기가 성공하게 됩니다!
 
 ### 2-3 쉘 스크립트 자동화
+---
 
 ```bash
 jsjs@JSJS:/mnt/c/Users/urina$ chmod +x check_db.sh
