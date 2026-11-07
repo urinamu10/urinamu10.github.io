@@ -10,33 +10,39 @@ comments: true
 
 <!-- 파일명: _posts/2026-10-31-sql-codekata-주제-영문.md -->
 
-## 오늘 푼 문제
+## 1. [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true)
 
-| # | 문제 | 난이도 | 유형 |
-| --- | --- | --- | --- |
-| 1 |  |  |  |
+- 테이블
 
-## 문제 1. 문제 이름
+![alt text](assets/img/kata_weather 5.jpg)
 
-**문제 요약**
 
-- 
-
-**접근 방법**
-
-- 
-
-**풀이**
-
-```sql
-
+- 문제 
+```plaintext
+1. STATION 테이블의 가장 긴 이름과 짧은 이름을 가진 `CITY` 이름을 쿼리하시오.
+2. 가장 짧고 긴 도시 이름의 길이를 각각 쿼리하시오. (ex: 도시, 길이)
 ```
 
-**막혔던 점 / 배운 점**
+- 풀이
 
-- 
+1. 각 테이블에서 `char_length` 문법을 사용하고 `order by`절에서 
+해당 도시와 컬럼의 길이를 가진 도시 한곳을 쿼리합니다.
 
-## 정리
+2. 각 컬럼 두개를 `Union`으로 수직결합합니다.
 
-- 이번에 새로 알게 된 함수나 문법:
-- 다음에 다시 볼 문제:
+```sql
+(SELECT city, char_length(city)
+from station
+order by char_length(city) asc,
+city asc
+limit 1)
+
+union all 
+
+(SELECT city, char_length(city)
+from station 
+order by char_length(city) desc,
+city asc
+limit 1)
+;
+```

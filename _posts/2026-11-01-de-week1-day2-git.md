@@ -5,7 +5,7 @@ date: 2026-11-01 21:00:00 +0900
 categories: [TIL, Git]
 tags: [github, sql]
 toc: true
-comments: true
+comments: true1d
 #mermaid: true   # 다이어그램(mermaid)을 쓸 때만 맨 앞 # 을 지우세요
 ---
 

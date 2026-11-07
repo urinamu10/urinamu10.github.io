@@ -7,6 +7,9 @@ tags: [airflow, 개념정리]
 toc: true
 comments: true
 # mermaid: true   # 다이어그램(mermaid)을 쓸 때만 맨 앞 # 을 지우세요
+#image: 목록 이미지를 추가할때 # 을 지우세요
+  path: /assets/img/imagedocker1.png
+  #alt: docker 이미지
 ---
 
 <!-- 파일명: _posts/2026-10-31-docs-기술명-영문.md -->

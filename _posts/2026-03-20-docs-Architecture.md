@@ -1,12 +1,16 @@
 ---
 title: "데이터 아키텍쳐"
-description: 데이터 엔지니어링 전체 라이프 사이클과 아키텍쳐 
+description: 데이터 엔지니어링 전체 라이프 사이클과 아키텍쳐
 date: 2026-03-20 00:00:00 +0900
 categories: [Data Engineering, Archiecture]
 tags: []
 math: true
 mermaid: true
+image: 
+  path: /assets/img/gold_layer.png
+  alt: Data lake 표준 패턴 이미지
 ---
+
 
 ## 1. 데이터 아키텍쳐 시각화
 **데이터 엔지니어링은 결국 "데이터의 흐름(Flow)을 설계하고 관리하는 일"입니다.** 
@@ -43,6 +47,7 @@ graph TD
     style Si fill:#c0c0c0,stroke:#333,color:#000
     style G fill:#ffd700,stroke:#333,color:#000
 ```
+
 ### 1-1 Raw sources 
 > 데이터는 비즈니스가 일어나는 곳에서 발생하며, 분석을 위해 태어나지 않는다.
 

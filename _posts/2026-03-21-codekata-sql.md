@@ -9,13 +9,13 @@ mermaid: true
 ---
 
 ## 1. [Revising the Select Query II](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true)
->테이블 정보
-{: .prompt-info }
+
+- 테이블 
 
 ![alt text](/assets/img/imageSQL1.png)
 
->문제
-{: .prompt-tip }
+- 문제
+
 
 ```text
 1. NAME (도시 이름) 필드만 출력하세요.
@@ -24,9 +24,7 @@ mermaid: true
 
 3. POPULATION이 120,000보다 커야 합니다.
 ```
->풀이
-{: .prompt-info }
-
+- 풀이
 
 **`Countrycode`가 `USA`이면서 `Population`이 120,000보다 큰 미국의 도시 `NAME`을 추출합니다.**
 
@@ -36,20 +34,18 @@ from CITY
 where countrycode = 'USA'
 and (population >= 120000)
 ```
----
+
+
 ## 2. [Select All](https://www.hackerrank.com/challenges/select-all-sql/problem?isFullScreen=true)
 
 
->문제
-{: .prompt-tip }
+- 문제
 
 ```text
 1. CITY 테이블의 모든 행을 쿼리하세요
 ```
 
->풀이
-{: .prompt-info }
-
+- 풀이
 
 **CITY 테이블에서 모든 행과 컬럼을 쿼리합니다.**
 
@@ -57,30 +53,29 @@ and (population >= 120000)
 SELECT *
 from CITY
 ```
----
+
+
 ## 3. [Select By ID](https://www.hackerrank.com/challenges/select-by-id/problem?isFullScreen=true)
 
->문제
-{: .prompt-tip }
+- 문제
 
 
 ```text
 1. CITY 테이블에서 ID가 1661인 모든 행렬을 쿼리하시오 
 ```
->풀이
-{: .prompt-info }
+- 풀이
 
 ```sql
 SELECT *
 from CITY
 where ID = 1661
 ```
----
+
+
 
 ## 4. [Japanese Cities' Attributes](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true)
 
->문제
-{:.prompt-info }
+- 문제
 
 ```text
 1. 일본의 모든 도시를 쿼리하시오.
@@ -88,8 +83,7 @@ where ID = 1661
 ```
 
 
->풀이
-{: .prompt-tip }
+- 풀이
 
 
 **Where 조건절에 countrycode를 JPN으로 설정한 후 모든 행렬을 쿼리합니다.**
@@ -103,16 +97,12 @@ where countrycode = 'JPN'
 
 ## 5. [Japanese Cities' Names](https://www.hackerrank.com/challenges/japanese-cities-name/problem?isFullScreen=true)
 
->문제
-{: .prompt-info }
+- 문제
 
 ```text
 1. CITY 테이블에서 Countrycode가 jpn인 모든 도시 이름을 쿼리하시오 
 ```
->풀이
-{: .prompt-tip }
-
-
+- 풀이
 
 ```sql
 SELECT name

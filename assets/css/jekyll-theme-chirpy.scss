@@ -258,6 +258,42 @@ div[class^='language-'] .code-header::before {
   word-break: keep-all;
 }
 
+/* 홈 목록 썸네일: 글에 image 를 지정하면 카드 왼쪽에 표시
+   (테마 기본은 오른쪽 배치이므로 데스크톱에서 방향을 뒤집음)
+   - 모바일: 카드 위쪽에 가로형(40:21)으로 표시
+   - 데스크톱: 카드 왼쪽, 카드 높이에 맞춰 꽉 채워 잘라서(cover) 표시 */
+#post-list .post-preview > .col-md-5 {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 40 / 21;
+  border-radius: 10px 10px 0 0;
+}
+
+#post-list .post-preview > .col-md-5 img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#post-list .post-preview:hover > .col-md-5 img {
+  transform: scale(1.04);
+}
+
+@media all and (min-width: 768px) {
+  #post-list .post-preview.flex-md-row-reverse {
+    flex-direction: row !important;
+  }
+
+  #post-list .post-preview > .col-md-5 {
+    aspect-ratio: auto;
+    min-height: 9.5rem;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
 /* ==========================================================
    Sidebar / topbar / tags
    ========================================================== */
