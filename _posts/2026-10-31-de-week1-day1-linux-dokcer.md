@@ -1,5 +1,5 @@
 ---
-title: "[DE-Week 1-1] Linux, Scripting, Docker 기초"
+title: "[TIL 10-31] Linux, Scripting, Docker 기초"
 description: 기초적인 터미널 사용법과 docker 원리 학습
 date: 2026-10-31 22:00:00 +0900
 categories: [TIL, Docker]

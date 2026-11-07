@@ -1,5 +1,5 @@
 ---
-title: "[DE-Week 1-2] Git과 GitHub SQLD 준비"
+title: "[TIL 11-01] Git과 GitHub SQLD 준비"
 description: 핵심적인 프로젝트 관리를 위한 git과 github 그리고 SQLD 시험준비 1장
 date: 2026-11-01 21:00:00 +0900
 categories: [TIL, Git]

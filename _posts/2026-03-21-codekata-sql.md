@@ -1,5 +1,5 @@
 ---
-title: "SQL 5문제"
+title: "[코드카타] Revising the Select Query II"
 description: SQL 코드카타 5문제 풀이
 date: 2026-03-21 00:00:00 +0900
 categories: [Code Kata, SQL]
