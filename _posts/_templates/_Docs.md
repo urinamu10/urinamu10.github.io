@@ -1,5 +1,5 @@
 ---
-title: "[Docs] 기술 이름 — 한 줄 설명"
+title: "[Data Engineering] 기술 이름"
 description: 이 문서가 다루는 개념과 읽고 나면 할 수 있는 것을 한 줄로
 date: 2026-10-31 10:00:00 +0900
 categories: [Data Engineering] # 카테고리2에 기술명
@@ -7,7 +7,7 @@ tags: [airflow, 개념정리]
 toc: true
 comments: true
 # mermaid: true   # 다이어그램(mermaid)을 쓸 때만 맨 앞 # 을 지우세요
-#image: 목록 이미지를 추가할때 # 을 지우세요
+#image: 1목록 이미지를 추가할때 # 을 지우세요
   path: /assets/img/imagedocker1.png
   #alt: docker 이미지
 ---

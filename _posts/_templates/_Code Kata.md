@@ -1,11 +1,11 @@
 ---
-title: "[SQL CodeKata] 문제 묶음 이름"
-description: 이번에 푼 문제 유형과 핵심 포인트 한 줄 요약
-date: 2026-10-31 10:00:00 +0900
-categories: [Code Kata]
-tags: [SQL, Python]
-toc: true
-comments: true
+title: "[코드카타] Query II"
+description: SQL 코드카타 1문제 풀이
+date: 2026-03-21 00:00:00 +0900
+categories: [Code Kata, SQL]
+tags: [hackerrank]
+math: true
+mermaid: true
 ---
 
 <!-- 파일명: _posts/2026-10-31-sql-codekata-주제-영문.md -->
