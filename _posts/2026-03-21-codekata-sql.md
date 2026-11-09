@@ -18,11 +18,9 @@ mermaid: true
 
 
 ```text
-1. NAME (도시 이름) 필드만 출력하세요.
-
-2. CountryCode가 **'USA'**인 미국 도시여야 합니다.
-
-3. POPULATION이 120,000보다 커야 합니다.
+NAME (도시 이름) 필드만 출력하세요.
+CountryCode가 'USA'인 미국 도시여야 합니다.
+POPULATION이 120,000보다 커야 합니다.
 ```
 - 풀이
 
@@ -42,7 +40,7 @@ and (population >= 120000)
 - 문제
 
 ```text
-1. CITY 테이블의 모든 행을 쿼리하세요
+CITY 테이블의 모든 행을 쿼리하세요
 ```
 
 - 풀이
@@ -61,7 +59,7 @@ from CITY
 
 
 ```text
-1. CITY 테이블에서 ID가 1661인 모든 행렬을 쿼리하시오 
+CITY 테이블에서 ID가 1661인 모든 행렬을 쿼리하시오 
 ```
 - 풀이
 
@@ -78,8 +76,8 @@ where ID = 1661
 - 문제
 
 ```text
-1. 일본의 모든 도시를 쿼리하시오.
-2. 일본의 countryCode는 `JPN`입니다.
+일본의 모든 도시를 쿼리하시오.
+일본의 countryCode는 `JPN`입니다.
 ```
 
 
@@ -100,7 +98,7 @@ where countrycode = 'JPN'
 - 문제
 
 ```text
-1. CITY 테이블에서 Countrycode가 jpn인 모든 도시 이름을 쿼리하시오 
+CITY 테이블에서 Countrycode가 jpn인 모든 도시 이름을 쿼리하시오 
 ```
 - 풀이
 
